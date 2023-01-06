@@ -7,4 +7,56 @@
 	position: fixed;
 	top: 0;
 	z-index: 9999;
+	display: flex;
+	
+	.left {
+		width: 540px;
+
+		.logo {
+			width: 144px;
+			height: 100%;
+			display: flex;
+			justify-self: center;
+			align-items: center;
+			margin-left: 160px;
+
+			& > img {
+				width: 110px;
+			}
+		}
+	}
+
+	.right {
+		flex: 1 1 auto;
+		padding-left: 50px;
+
+		.list {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			gap: 24px;
+
+			&--item {
+				color: #fff;
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				cursor: pointer;
+
+				.label {
+					font-size: 16px;
+					font-weight: 300;
+					line-height: 23px;
+					letter-spacing: 0px;
+					text-align: left;
+
+				}
+			}
+
+			.icon {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
 }
