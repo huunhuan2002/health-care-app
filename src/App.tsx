@@ -6,11 +6,11 @@ import './App.scss';
 
 function App() {
   return (
-	<>
-		<Header />
-		<Body />
-		<Footer />
-	</>
+		<>
+			<Header />
+			<Body />
+			<Footer />
+		</>
   );
 }
 

@@ -3,7 +3,7 @@
 .home {
 	margin-top: 56px;
 	margin-bottom: 56px;
-	width: 100%;
+	margin: 56px $body-padding;
 	.recommend {
 		display: flex;
 		gap: 32px;
@@ -77,6 +77,25 @@
 				color: $color-primary-400;
 				white-space: pre;
 			}
+		}
+	}
+
+	.btn {
+		margin-top: 28px;
+		display: flex;
+		justify-content: center;
+
+		.btn-see-more {
+			height: 56px;
+			width: 296px;
+			border: none;
+			color: #fff;
+			font-family: Hiragino Kaku Gothic Pro;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 26px;
+			letter-spacing: 0px;
+			background: $color-primary-300-400;
 		}
 	}
 }

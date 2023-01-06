@@ -1,0 +1,69 @@
+@import "../../variable.scss";
+
+.auth-home {
+  margin-bottom: 56px;
+  .header-wrapper {
+    width: 100%;
+    height: 316px;
+    display: flex;
+  
+    .archivement {
+      img {
+        width: 540px;
+        height: 316px;
+        object-fit: cover;
+      }
+    }
+  
+    .chart {
+      flex: 1 1 auto;
+    }
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    margin: 22px 0;
+  
+    & > img {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .history {
+    margin: 0 $body-padding 56px $body-padding;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    .img-card {
+      width: 234px;
+      height: 234px;
+      position: relative;
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .label {
+        height: 32px;
+        width: 120px;
+        background: $color-primary-300;
+        color: #fff;
+        font-family: Inter;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+}

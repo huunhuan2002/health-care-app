@@ -2,6 +2,7 @@ import React from 'react';
 import './index.scss';
 import App from './App';
 import Home from './component/home';
+import AuthHome from './component/AuthHome';
 import reportWebVitals from './reportWebVitals';
 import ReactDOM from 'react-dom';
 import {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
+      },
+      {
+        path: '/home',
+        element: <AuthHome />
       }
     ]
   }
