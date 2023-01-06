@@ -58,7 +58,7 @@ const AuthHome = () => {
           <img src="/image/d01.jpg" alt="archivement" />
         </div>
         <div className="chart">
-          chart
+          <img src="/image/chart1.png" alt="chart" />
         </div>
       </div>
       <div className="button">

@@ -1,41 +1,18 @@
 import React from 'react';
 import './index.scss';
 import App from './App';
-import Home from './component/home';
-import AuthHome from './component/AuthHome';
-import MyRecord from './component/MyRecord';
 import reportWebVitals from './reportWebVitals';
 import ReactDOM from 'react-dom';
 import {
-  createBrowserRouter,
-  RouterProvider,
+  BrowserRouter,
 } from "react-router-dom";
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    children: [
-      {
-        path: '/',
-        element: <Home />
-      },
-      {
-        path: '/home',
-        element: <AuthHome />
-      },
-      {
-        path: '/my-record',
-        element: <MyRecord />
-      }
-    ]
-  }
-])
 
 const root = document.getElementById('root') as HTMLElement
 ReactDOM.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   root
 );

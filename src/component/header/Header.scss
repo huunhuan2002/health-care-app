@@ -6,7 +6,7 @@
 	background-color: $color-dark-500;
 	position: fixed;
 	top: 0;
-	z-index: 9999;
+	z-index: 2;
 	display: flex;
 	
 	.left {
@@ -19,6 +19,7 @@
 			justify-self: center;
 			align-items: center;
 			margin-left: 160px;
+			cursor: pointer;
 
 			& > img {
 				width: 110px;
@@ -28,13 +29,15 @@
 
 	.right {
 		flex: 1 1 auto;
-		padding-left: 50px;
+		padding-left: 80px;
+		padding-right: 150px;
+		display: flex;
 
 		.list {
 			height: 100%;
 			display: flex;
 			align-items: center;
-			gap: 24px;
+			gap: 35px;
 
 			&--item {
 				color: #fff;
@@ -49,13 +52,27 @@
 					line-height: 23px;
 					letter-spacing: 0px;
 					text-align: left;
-
 				}
 			}
 
 			.icon {
 				display: flex;
 				align-items: center;
+			}
+		}
+
+		.auth {
+			display: flex;
+			align-items: center;
+			flex: 1 1 auto;
+			justify-content: end;
+			cursor: pointer;
+
+			.label {
+				color: #fff;
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 23px;
 			}
 		}
 	}

@@ -65,7 +65,9 @@ const MyRecord = () => {
           ))
         }
       </div>
-      <div className="chart"></div>
+      <div className="chart">
+        <img src="/image/chart2.png" alt="chart" />
+      </div>
       <div className="exercise">
         <div className="title">
           <div className="label">MY EXERCISE</div>

@@ -8,3 +8,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.scrollToTop {
+  position: fixed;
+  right: 150px;
+  bottom: 200px;
+  cursor: pointer;
+}
