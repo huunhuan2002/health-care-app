@@ -1,0 +1,190 @@
+@import "../../variable.scss";
+
+.record {
+	margin: 56px $body-padding;
+  .recommend {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .img-card {
+      width: 288px;
+      height: 288px;
+      border: 24px solid $color-primary-300;
+      background-color: $color-dark-600;
+      position: relative;
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        mix-blend-mode: luminosity;
+        opacity: 25%;
+      }
+
+      .detail {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .label {
+          width: 240px;
+          height: 30px;
+          font-size: 25px;
+          font-weight: 400;
+          line-height: 30px;
+          text-align: center;
+          letter-spacing: 0.125px;
+          height: 30px;
+          width: 240px;
+          color: $color-primary-300;
+        }
+
+        .tag {
+          text-align: center;
+          width: 160px;
+          height: 24px;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 20px;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #FFFFFF;
+          background: $color-primary-400;
+        }
+      }
+    }
+  }
+
+  .chart {
+    width: 100%;
+    height: 304px;
+    margin-top: 56px;
+    background-color: $color-dark-500;
+  }
+
+  .exercise {
+    width: 100%;
+    height: 264px;
+    margin-top: 56px;
+    background-color: $color-dark-500;
+    padding: 16px 24px 16px 24px;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      color: #fff;
+      display: flex;
+      .label {
+        width: 96px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.15px;
+        text-align: left;
+      }
+      .date {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.1px;
+        text-align: left;
+      }
+    }
+
+    .list {
+      color: #fff;
+      overflow-y: auto;
+      padding-right: 32px;
+
+      .row {
+        display: flex;
+        gap: 40px;
+        margin-top: 3px;
+      }
+
+      &--item {
+        display: flex;
+        border-bottom: 1px solid $color-grey-400;
+        padding-bottom: 4px;
+        padding-right: 10px;
+        flex: 1 1 auto;
+
+        .gold {
+          margin-left: 10px;
+
+          .name {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 22px;
+            text-align: left;
+          }
+
+          .kalo {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: left;
+            color: $color-primary-300;
+          }
+        }
+
+        .time {
+          flex: 1 1 auto;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: right;
+          color: $color-primary-300;
+        }
+      }
+    }
+  }
+
+  .diary {
+    width: 100%;
+    margin-top: 56px;
+    .title {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 27px;
+      text-align: left;
+      color: $color-dark-500;
+    }
+    
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      &--item {
+        width: 231px;
+        height: 231px;
+        border: 2px solid $color-grey-400;
+        padding: 16px;
+
+        .date-time {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: left;
+          color: $color-dark-500;
+        }
+
+        .content {
+          margin-top: 8px;
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 17px;
+          text-align: left;
+          white-space: pre-line;
+        }
+      }
+    }
+  }
+}

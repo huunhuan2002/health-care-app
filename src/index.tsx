@@ -3,6 +3,7 @@ import './index.scss';
 import App from './App';
 import Home from './component/home';
 import AuthHome from './component/AuthHome';
+import MyRecord from './component/MyRecord';
 import reportWebVitals from './reportWebVitals';
 import ReactDOM from 'react-dom';
 import {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: '/home',
         element: <AuthHome />
+      },
+      {
+        path: '/my-record',
+        element: <MyRecord />
       }
     ]
   }
