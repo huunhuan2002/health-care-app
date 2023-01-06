@@ -1,0 +1,9 @@
+@import "../../variable.scss";
+
+.footer {
+	width: 100%;
+	height: $height-footer;
+	background-color: $color-dark-500;
+	position: fixed;
+	bottom: 0;
+}

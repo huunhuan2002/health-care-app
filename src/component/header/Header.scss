@@ -1,0 +1,9 @@
+@import "../../variable.scss";
+
+.header {
+	width: 100%;
+	height: $height-header;
+	background-color: $color-dark-500;
+	position: fixed;
+	top: 0;
+}

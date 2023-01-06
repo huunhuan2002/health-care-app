@@ -1,0 +1,7 @@
+@import "../../variable.scss";
+
+.body {
+	min-height: $height-body;
+	margin: 64px 160px 128px 160px;
+	overflow-y: auto;
+}
